@@ -24,3 +24,123 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Carousel Responsive Styles */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ant Design Carousel Custom Styles */
+.portfolio-carousel {
+  width: 100%;
+  overflow: visible;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+
+.portfolio-carousel .ant-carousel {
+  overflow: visible;
+}
+
+.portfolio-carousel .ant-carousel .slick-slide {
+  padding: 0;
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+
+.portfolio-carousel .ant-carousel .slick-slide > div {
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.portfolio-carousel .ant-carousel .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-carousel .ant-carousel .slick-list {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide default dots since we're using custom navigation */
+.portfolio-carousel .ant-carousel .slick-dots {
+  display: none !important;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+  .portfolio-carousel {
+    padding: 30px 10px;
+    margin-top: 30px;
+  }
+
+  .portfolio-carousel .ant-carousel .slick-slide {
+    padding: 0 !important;
+  }
+
+  .portfolio-carousel .ant-carousel .slick-slide > div {
+    padding: 20px 0;
+  }
+
+  .portfolio-carousel .ant-carousel .slick-center {
+    transform: scale(1);
+  }
+
+  .portfolio-carousel .ant-carousel .slick-slide:not(.slick-center) {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+
+  /* Ensure proper height for mobile carousel items */
+  .portfolio-carousel .ant-carousel .slick-slide img {
+    height: 400px !important;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-carousel .ant-carousel .slick-slide img {
+    height: 280px !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .portfolio-carousel .ant-carousel .slick-slide img {
+    height: 320px !important;
+  }
+}
+
+/* Smooth scrolling and performance optimizations */
+.portfolio-carousel .ant-carousel .slick-slide {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Ensure smooth transitions */
+.portfolio-carousel .ant-carousel .slick-track {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Touch-friendly navigation */
+.carousel-nav-btn {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .carousel-nav-btn {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
