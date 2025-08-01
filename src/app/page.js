@@ -98,7 +98,7 @@ export default function Page() {
         "Engage our experienced Shopify developers to complement your in-house team or get a solution designed from scratch. Our developers ensure timely and affordable project delivery taking full advantage of Shopify features and capabilities.",
     },
     {
-      icon: Settings, // Reusing Settings icon as it matches the gear in the image
+      icon: Settings,
       title: "Shopify Update and Support",
       description:
         "Our experienced technical team offers periodic updates and support solutions for your Shopify store.",
@@ -113,20 +113,20 @@ export default function Page() {
   const testimonials = [
     {
       quote:
-        "Our ecommerce migration to Shopify was a great success. Thanks to everyone at CloudConverge",
+        "Our ecommerce migration to Shopify was a great success. Thanks to everyone at 360 Australia.",
       company: "HELM",
       logo: "/clients-logo1.png",
     },
     {
       quote:
-        "Their Shopify team was very experienced and knew exactly how to drive our project from start to finish",
+        "Their team was very experienced and knew exactly how to drive our project from start to finish.",
       company: "TARUN TAHILIANI",
 
       logo: "/tarun_tahiliani.png",
     },
     {
       quote:
-        "Very impressed with CloudConverge's commitment and their support throughout the development stages",
+        "Very impressed with 360 Australia's commitment and their support throughout the development stages.",
       company: "verve",
 
       logo: "/clients-logo6.png",
@@ -174,7 +174,7 @@ export default function Page() {
     <div>
       <section className="w-full">
         {/* Top Section */}
-        <div className="bg-[#000000] text-white py-16 md:py-24 lg:py-32 mb-[120px] relative z-0">
+        <div className="bg-[#000000] h-screen text-white py-16 md:py-24  relative z-0">
           <div className="container mx-auto px-4 text-center">
             <div className="flex items-center justify-center mb-[30px] mt-[0px]">
               <Image
@@ -195,40 +195,33 @@ export default function Page() {
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-[40px]">
               <Button
                 variant="outline"
-                className="border-white !text-teal-400 !hover:bg-white !hover:text-[#1a202c] !px-8 !py-6 !text-lg rounded-md !bg-transparent"
+                className=" !text-teal-400 !hover:bg-white !hover:border !border-teal-400  !hover:text-[#1a202c] !px-8 !py-6 !text-lg rounded-md !bg-transparent"
               >
-                GET A CALL BACK
+                Discuss with our Specialist
               </Button>
-              <Button
-                variant="outline"
-                className="border-white !text-teal-400 hover:bg-white !hover:text-[#1a202c] !px-8 !py-6 !text-lg !rounded-md !bg-transparent"
-              >
-                CALL US
-              </Button>
+
             </div>
           </div>
         </div>
+
         {/* Bottom Section - Slider */}
-        <div
-          className="relative bg-white pt-8 sm:pt-12 md:pt-16 lg:pt-20 
-                        pb-8 sm:pb-12 md:pb-16 lg:pb-24 xl:pb-32 
-                        z-10"
-        >
+        <div className="bg-[#eff5fc] h-[350px] w-[100%] rounded-b-full">
+
           <div
-            className="container mx-auto px-2 sm:px-4 md:px-6 
-                          flex flex-col lg:flex-row items-center lg:items-start 
-                          mt-[-140px] sm:mt-[-100px] md:mt-[-120px] lg:mt-[-140px] 
+            className=" relative   sm:px-4 
+                          flex flex-col lg:flex-row items-center justify-between w-full
+                          mt-[-140px] sm:mt-[-100px] md:mt-[-120px]  
                           gap-4 sm:gap-6 md:gap-8"
           >
-            <div className="w-full lg:w-1/3 text-center lg:text-left mb-6 lg:mb-0 px-2">
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#ffffff] leading-tight sm:leading-snug mb-3">
+            <div className="  text-center lg:text-left mb-16 lg:mb-0 !mt-[-25px]">
+              <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold !text-[#ffffff] leading-tight sm:leading-snug mb-5">
                 EMPOWERING BRANDS WITH
               </h2>
-              <h2 className="text-lg sm:text-xl md:text-2xl font-bold mt-[30px] text-teal-400 leading-tight sm:leading-snug">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold !mt-[-10px] text-teal-400 leading-tight sm:leading-snug">
                 TRANSFORMATIONAL ECOMMERCE STRATEGIES
               </h2>
             </div>
-            <div className="lg:w-[64%] relative mt-[-70px] w-full">
+            <div className="lg:w-[70%] relative mt-[-110px]  w-full">
               <Carousel
                 ref={carouselRef}
                 autoplay={true}
@@ -271,7 +264,7 @@ export default function Page() {
               >
                 {sliderItems.map((item, index) => (
                   <div key={item.id}>
-                    <div className="mx-2 shadow-lg rounded-lg overflow-hidden bg-white transition-transform duration-300 hover:scale-105">
+                    <div className="mx-2 shadow-lg rounded-lg overflow-hidden bg-white carousel-card-shadow transition-transform duration-300 hover:scale-105">
                       <Image
                         src={item.image || "/placeholder.svg"}
                         alt={item.alt}
@@ -299,7 +292,7 @@ export default function Page() {
               >
                 <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
               </Button>
-              <Button
+              {/* <Button
                 variant="ghost"
                 size="icon"
                 className="carousel-nav-btn !absolute !right-2 !top-1/2 -translate-y-1/2 
@@ -311,28 +304,36 @@ export default function Page() {
                 onClick={goToNext}
               >
                 <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
+
       </section>
 
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4  mt-[120px]">
         <div className="max-w-8xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-white border-0 shadow-sm">
-                <div className="p-8 text-center">
-                  <blockquote className="text-black text-lg leading-relaxed mb-8">
+              <Card key={index} className="bg-white border-0 shadow-sm carousel-card-shadow">
+                <div className=" text-center">
+                  <img
+                    src="/Screenshot_2025-08-01_025354-removebg-preview.png"
+                    alt=""
+
+
+                  />
+                  <blockquote className="text-black text-lg   mt-[-50px] leading-relaxed mb-8">
+
                     {testimonial.quote}
                   </blockquote>
                   <div className="mt-auto">
                     <img
                       src={testimonial.logo || "/placeholder.svg"}
                       alt={`${testimonial.company} logo`}
-                      className={`mx-auto object-contain  ${
-                        index === 1 ? "h-6" : "h-10"
-                      }`}
+                      className={`mx-auto object-contain  ${index === 1 ? "h-6" : "h-10"
+                        }`}
                     />
                   </div>
                 </div>
@@ -342,44 +343,38 @@ export default function Page() {
         </div>
       </section>
       <section className="w-full py-12 flex justify-center md:py-24 lg:py-32 bg-white">
-        <div className="container grid gap-12 px-4 md:grid-cols-2 md:px-6 lg:gap-24">
+        <div className="container grid gap-12 px-4 md:grid-cols-2 md:px-6 lg:gap-24 items-end">
+          {" "}
+          {/* Changed items-center to items-end */}
           {/* Left Column: Image, Heading, and Description */}
           <div className="flex flex-col items-start space-y-6">
             <div className="w-full max-w-[600px] mx-auto md:mx-0">
               <Image
-                src="/shopify-theme-work-r64dy3vsqtpz2it942b0q7kcy1ap6xn65ykaslqz52 (1).webp"
-                width={600}
-                height={400}
+                src="/shopify-theme-work.webp"
+                width={350}
+                height={350}
                 alt="Ecommerce Solution Screenshot"
-                className="aspect-[3/2] object-contain w-full"
+                className="  w-full"
               />
             </div>
             <div className="space-y-4 text-center md:text-left">
-              <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-5xl">
-                One Stop Ecommerce Solution Provider – Design, Development,
-                Integration, Support & Digital Marketing
+              <h1 className="text-3xl text-[#051549] font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-4xl">
+                One Stop E-commerce Solution provider. Design, Development, Integration, Support & Digital Marketing
               </h1>
               <p className="max-w-[600px] text-gray-600 md:text-xl mx-auto md:mx-0">
-                We offer end-to-end ecommerce services under one roof - from
-                stunning storefront design and robust platform development to
-                seamless third-party integrations, ongoing technical support,
-                and performance-driven digital marketing. Our tailored solutions
-                help brands launch, grow, and scale their online presence
-                efficiently.
+                We offer complete e-commerce services under one roof, from stunning online store design and strong platform building to smooth connections with other tools, ongoing tech help, and marketing that gets results. Our custom solutions help brands launch, grow, and expand their online business effectively.
               </p>
             </div>
           </div>
-
           {/* Right Column: Contact Form */}
-          <div className="flex flex-col items-center justify-center   bg-white shadow-lg rounded-lg">
-            <div className="w-full max-w-[80%] space-y-6">
+          <div className="flex flex-col items-center justify-center rounded-lg">
+            <div className="w-full max-w-[100%] lg:max-w-[60%] space-y-6 bg-white shadow-lg p-10">
               <div className="text-center md:text-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl mt-[-40px] font-bold tracking-tight text-gray-900">
-                  Connect with us
+                <h2 className="text-3xl md:text-4xl lg:text-4xl mt-[20px] tracking-tight text-[#05195a]">
+                  Get free Quote
                 </h2>
-                <p className="text-gray-600 mt-6 text-base md:text-lg">
-                  Contact us Today for Expert Shopify Support and Hassle-Free
-                  Store Management!
+                <p className="mt-6 md:text-lg ">
+                  Reach out to us to discuss your requirements and get recommendations and get free proposal.
                 </p>
               </div>
               <form className="grid gap-8">
@@ -391,25 +386,26 @@ export default function Page() {
                 <Input
                   type="email"
                   placeholder="Email*"
-                  className="w-full px-4 py-3  h-[50px] rounded-md bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary"
+                  className="w-full px-4 py-3 h-[50px] rounded-md bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary"
                 />
                 <Input
                   type="tel"
                   placeholder="Phone*"
-                  className="w-full px-4 py-3 text-[20px]  h-[50px] rounded-md bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary"
+                  className="w-full px-4 py-3 text-[20px] h-[50px] rounded-md bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary"
                 />
-
                 <textarea
                   placeholder="Message"
                   rows={5}
                   className="w-full px-4 py-3 h-[50px] rounded-md bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary resize-y"
                 />
-                <Button
-                  type="submit"
-                  className="w-full !bg-teal-500 !text-white !py-5 rounded-md !text-[22px] font-bold !hover:bg-orange-600 transition-colors"
-                >
-                  Submit
-                </Button>
+                <div className="w-full flex justify-center">
+                  <Button
+                    type="submit"
+                    className="w-50 !bg-teal-500 !text-white !py-5 rounded-md !text-[24px] font-bold !hover:bg-orange-600 transition-colors"
+                  >
+                    Submit
+                  </Button>
+                </div>
               </form>
             </div>
           </div>
@@ -418,13 +414,10 @@ export default function Page() {
       <div className="relative w-full min-h-[400px] md:h-[500px] bg-[#f0efea] flex items-center justify-start overflow-hidden">
         <div className="z-10 bg-[#f5fcff] min-h-[400px] md:h-[500px] w-full md:w-[50%] flex justify-center items-center flex-col md:rounded-tr-full px-4 md:px-8 py-8 md:py-0">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold max-w-xl text-gray-800 text-center md:text-left">
-            We Are One Of The Shopify Development Services
+            We Are One Of The Development Services
           </h1>
           <p className="mt-4 text-base md:text-lg lg:text-[18px] text-gray-700 max-w-xl text-center md:text-left">
-            From creating a new Shopify store to building a feature-rich
-            website, Cloud Converge provides end-to-end Shopify development
-            services. Our services provide a recognized e-commerce presence that
-            aligns with your brand identity.
+            From creating a new store to building a feature-rich website, 360 Australia provides end-to-end development services. Our services provide a recognized e-commerce presence that aligns with your brand identity.
           </p>
         </div>
         <div className="hidden md:flex absolute right-0 top-0 h-full w-[50%] items-center justify-end space-x-4 z-0">
@@ -442,7 +435,7 @@ export default function Page() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Our Shopify Development Services
+                Our Development Services 
               </h2>
             </div>
           </div>
@@ -465,10 +458,10 @@ export default function Page() {
         </div>
       </section>
       <section className="py-8 md:py-16 px-4 bg-blue-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 bg-white border-2 border-amber-200 rounded-lg overflow-hidden items-center">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 bg-white carousel-card-shadow   rounded-lg overflow-hidden items-center">
             {/* Left side - Video */}
-            <div className="relative order-2 lg:order-1">
+            <div className="relative order-2 w-[90%] lg:order-1 py-[6px]  carousel-card-shadow">
               <video
                 className="w-full h-[250px] md:h-[350px] lg:h-full object-cover"
                 autoPlay

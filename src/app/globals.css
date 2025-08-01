@@ -49,8 +49,9 @@ body {
 }
 
 .portfolio-carousel .ant-carousel .slick-slide {
-  padding: 0;
+  padding: 10;
   opacity: 1;
+  height: 200px !important;
   transition: all 0.8s ease;
 }
 
@@ -143,4 +144,11 @@ body {
     min-width: 40px;
     min-height: 40px;
   }
+}
+
+.carousel-card-shadow{
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.ant-carousel .slick-list{
+ padding-bottom: 25px !important;
 }
