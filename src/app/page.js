@@ -19,6 +19,7 @@ import {
   Instagram,
   Phone,
   Link,
+  Facebook,
 } from "lucide-react";
 import { Button, Card, Input, Carousel } from "antd";
 
@@ -57,57 +58,57 @@ export default function Page() {
   const services = [
     {
       icon: Smartphone,
-      title: "Shopify Store Development",
+      title: "Store Development",
       description:
-        "We do comprehensive research into your industry, audience, and competitors to design a site optimized for user experience and conversions. From payment gateways to shipping integrations and more, we ensure every feature works seamlessly to support your operations.",
+        "We do complete research into your industry, audience, and competitors to design a site that's great for users and helps them buy. From payment systems to shipping connections and more, we make sure every feature works perfectly to support your business.",
     },
     {
       icon: Smartphone,
-      title: "Shopify App Development",
+      title: "App Development",
       description:
-        "We specialize in custom Shopify app development to extend the functionality of your store and meet your unique business requirements – it's a private app for internal workflows or a public app for the Shopify marketplace, our team builds scalable, secure, and user-friendly solutions tailored to your goals.",
+        "We specialize in custom app creation to extend what your store can do and meet your unique business needs, whether it's a private app for your internal work or a public app for the app store, our team builds growable, safe, and easy-to-use solutions made just for your goals.",
     },
     {
       icon: ArrowRightLeft,
-      title: "Shopify Migration",
+      title: "Website Migration",
       description:
-        "Migration from an existing platform can lead to enormous downtime. However, our Shopify migration services will assist them with low downtime. Our professional developers migrate websites to Shopify from other platforms with ease.",
+        "Moving from one online platform to another can cause a lot of time where your site is down. However, our website migration services will help you with very little downtime. Our expert developers move websites from one to another platforms smoothly.",
     },
     {
       icon: Gauge,
       title: "Performance Optimization",
       description:
-        "We optimize your Shopify store for speed, responsiveness, and smooth performance across all devices. From code enhancements to image compression and advanced caching, we ensure faster load times and improved user experience.",
+        "We optimize your website for speed, responsiveness, and performance across all devices. From code enhancements to image compression, we ensure faster load times and improved user experience.",
     },
     {
       icon: Monitor,
-      title: "Shopify Theme Development",
+      title: "Website Theme Development",
       description:
-        "We craft intelligent and engaging shopfronts that intrigue users at first visit. Our themes are designed for ease of navigation and seamless store performance.",
+        "We build smart and appealing online stores that grab users' attention right away. Our themes are designed for easy Browse and smooth store performance.",
     },
     {
       icon: Settings,
-      title: "Shopify Third-Party Integration",
+      title: "Third-Party Integration",
       description:
-        "We seamlessly integrate your Shopify store with third-party tools like CRMs, ERPs, payment gateways, and shipping providers. This ensures smoother operations, real-time data sync, and a unified ecommerce ecosystem.",
+        "We integrate your Shopify store with third-party tools like CRMs, ERPs, payment gateways, and shipping providers. This ensures smoother operations, real-time data sync, and a connected ecommerce ecosystem.",
     },
     {
       icon: UserCog,
-      title: "Dedicated Shopify Developer",
+      title: "Dedicated Developer",
       description:
-        "Engage our experienced Shopify developers to complement your in-house team or get a solution designed from scratch. Our developers ensure timely and affordable project delivery taking full advantage of Shopify features and capabilities.",
+        "Engage our expert developers to complement your in-house team or get a solution designed from scratch. Our developers ensure timely project delivery, taking full advantage of skills and capabilities.",
     },
     {
       icon: Settings,
-      title: "Shopify Update and Support",
+      title: "Update and Support",
       description:
-        "Our experienced technical team offers periodic updates and support solutions for your Shopify store.",
+        "Our experienced technical team and dedicated developers offer periodic updates and support solutions for your store and websites.",
     },
     {
       icon: DollarSign,
-      title: "Shopify Conversion Rate Optimization",
+      title: "Conversion Rate Optimization",
       description:
-        "We help our clients by reviewing their existing store and analyze existing store setup, performing A/B testing, Funnel analysis, Checkout flow optimization, Data-driven tweaks using analytics tools, user behavior analysis.",
+        "We help our customers by reviewing their existing website and analyzing its setup, performing A/B testing, funnel analysis, checkout flow optimization, making data-driven tweaks using analytics tools, and conducting user behavior analysis.",
     },
   ];
   const testimonials = [
@@ -144,35 +145,35 @@ export default function Page() {
 
   const features = [
     {
-      title: "Shopify Experts with over 10+ years of experience",
+      title: "Expert Developers with over 10+ years of experience",
       description:
-        "With years of experience on Shopify platform, our team is well versed with the platform - from design and development to integrations and app tweaks.",
+        "With years of experience, our team is well-versed in coding. From design and development to integrations and app tweaks.",
     },
     {
-      title: "Speed & Performance Optimization",
+      title: "Speed and Performance Optimization",
       description:
-        "We make sure your store loads quickly, runs smoothly, and provides a seamless experience on all devices - helping to lower bounce rates and improve your SEO.",
+        "We make sure your website loads quickly, runs smoothly, and provides a great user experience on all devices. We help to lower bounce rates and improve your SEO.",
     },
     {
       title: "End-to-End Support",
       description:
-        "From setting up your store to ongoing maintenance and updates, we provide continuous support to keep your store current and secure.",
+        "From creating your website to ongoing maintenance and updates, we provide continuous support to keep your website updated and secure.",
     },
     {
-      title: "High Conversion-Focused Design",
+      title: "Conversion-Focused Design",
       description:
-        "We don't just create stunning stores - we craft experiences that drive sales. Every detail is designed to enhance usability and boost conversions.",
+        "We don't just create unique websites, we create experiences that drive sales. Every detail is designed to enhance usability and boost conversions.",
     },
     {
-      title: "Transparent Pricing & Timelines",
+      title: "Transparent Pricing and Timelines",
       description:
-        "No hidden fees. We offer clear project scopes, timelines, and pricing so you can plan with confidence.",
+        "We don't have hidden fees. We always offer clear project scopes, timelines, and pricing so you can plan with confidence.",
     },
   ];
 
   return (
     <div>
-      <section className="w-full">
+      <section className="w-full  min-h-screen bg-white relative overflow-hidden">
         {/* Top Section */}
         <div className="bg-[#000000] h-screen text-white py-16 md:py-24  relative z-0">
           <div className="container mx-auto px-4 text-center">
@@ -401,7 +402,7 @@ export default function Page() {
                 <div className="w-full flex justify-center">
                   <Button
                     type="submit"
-                    className="w-50 !bg-teal-500 !text-white !py-5 rounded-md !text-[24px] font-bold !hover:bg-orange-600 transition-colors"
+                    className="w-50 !bg-teal-500 !text-white !py-5 rounded-md !text-[24px] font-bold !hover:bg-orange-600 transition-colors animate-popup-pulse hover:animate-bounce"
                   >
                     Submit
                   </Button>
@@ -472,12 +473,10 @@ export default function Page() {
             </div>
             <div className="space-y-4 md:space-y-6 p-6 md:p-8 order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                Why Cloud Converge?
+                Why 360 Australia?
               </h2>
               <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                Shopify Global Partner offering expert eCommerce solutions,
-                store development, app integration, and marketing services to
-                help businesses grow and succeed worldwide on Shopify.
+                We are offering expert eCommerce solutions, store development, app integration, and marketing services to help businesses grow and succeed in the competitive digital landscape. We're here to provide everything you need to launch and expand through your website.
               </p>
 
               {/* Optional: Add some feature points */}
@@ -551,108 +550,82 @@ export default function Page() {
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-center justify-center">
             {/* Left side - Contact Information */}
-            <div className="text-white space-y-8">
-              <h2 className="text-4xl font-bold mb-12">Contact Us</h2>
+            <div className="text-white space-y-8 text-center lg:text-left">
+              <h2 className="text-5xl font-bold mb-12">Contact Us</h2>
 
-              {/* USA Location */}
-              <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 mt-1 text-white flex-shrink-0" />
+              {/* Australia Address */}
+              <div className="flex items-start gap-4 justify-center lg:justify-start">
+                <MapPin className="w-8 h-8 mt-1 text-white flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">USA</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    565, Plandome RD, Unit 107, Manhasset New York — 11030
+                  <h3 className="text-2xl font-semibold mb-2">Address</h3>
+                  <p className="text-gray-300 leading-relaxed text-lg">
+                    Sydney, NSW, Australia
                   </p>
-                </div>
-              </div>
-
-              {/* India Location */}
-              <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 mt-1 text-white flex-shrink-0" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">INDIA</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    E 44/2, Pocket B, Okhla Phase II, Okhla Industrial Estate,
-                    New Delhi — 110020
-                  </p>
-                </div>
-              </div>
-
-              {/* Phone */}
-              <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 mt-1 text-white flex-shrink-0" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-                  <a
-                    href="tel:+917827902509"
-                    className="text-gray-300 hover:text-white transition-colors underline"
-                  >
-                    +91 7827902509
-                  </a>
                 </div>
               </div>
 
               {/* Email */}
-              <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 mt-1 text-white flex-shrink-0" />
+              <div className="flex items-start gap-4 justify-center lg:justify-start">
+                <Mail className="w-8 h-8 mt-1 text-white flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Email Us</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Email</h3>
                   <a
-                    href="mailto:info@cloudconverge.io"
-                    className="text-gray-300 hover:text-white transition-colors underline"
+                    href="mailto:hello@360australia.com.au"
+                    className="text-gray-300 hover:text-white transition-colors underline text-lg"
                   >
-                    info@cloudconverge.io
+                    hello@360australia.com.au
                   </a>
                 </div>
               </div>
             </div>
 
             {/* Right side - Contact Form */}
-            <div className="bg-white rounded-lg p-8 shadow-2xl border border-gray-100 backdrop-blur-sm">
-              <div className="mb-6">
-                <p className="text-blue-600 font-medium mb-2">
+            <div className="bg-white rounded-lg p-8 shadow-2xl border border-gray-100 backdrop-blur-sm mx-auto w-full max-w-lg">
+              <div className="mb-6 text-center">
+                <p className="text-blue-600 font-medium mb-2 text-lg">
                   Free Consultation
                 </p>
-                <h3 className="text-2xl font-bold text-gray-900">Contact Us</h3>
+                <h3 className="text-3xl font-bold text-gray-900">Contact Us</h3>
               </div>
 
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="text-gray-700 font-medium">
+                  <label htmlFor="name" className="text-gray-700 font-medium text-lg">
                     Name*
                   </label>
                   <Input
                     id="name"
                     type="text"
                     required
-                    className="mt-1 bg-gray-50 border-gray-200 focus:border-blue-500 focus:ring-blue-500"
+                    className="mt-1 bg-gray-50 border-gray-200 focus:border-blue-500 focus:ring-blue-500 text-lg h-12"
                     placeholder="Your name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="text-gray-700 font-medium">
+                  <label htmlFor="email" className="text-gray-700 font-medium text-lg">
                     Email*
                   </label>
                   <Input
                     id="email"
                     type="email"
                     required
-                    className="mt-1 bg-gray-50 border-gray-200 focus:border-blue-500 focus:ring-blue-500"
+                    className="mt-1 bg-gray-50 border-gray-200 focus:border-blue-500 focus:ring-blue-500 text-lg h-12"
                     placeholder="Your email"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="text-gray-700 font-medium">
+                  <label htmlFor="phone" className="text-gray-700 font-medium text-lg">
                     Phone*
                   </label>
                   <Input
                     id="phone"
                     type="tel"
                     required
-                    className="mt-1 bg-gray-50 border-gray-200 focus:border-blue-500 focus:ring-blue-500"
+                    className="mt-1 bg-gray-50 border-gray-200 focus:border-blue-500 focus:ring-blue-500 text-lg h-12"
                     placeholder="Your phone number"
                   />
                 </div>
@@ -660,25 +633,27 @@ export default function Page() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="text-gray-700 font-medium"
+                    className="text-gray-700 font-medium text-lg"
                   >
                     Message*
                   </label>
-                  <txtarea
+                  <textarea
                     id="message"
                     required
                     rows={4}
-                    className="mt-1 bg-gray-50 border-gray-200 focus:border-blue-500 focus:ring-blue-500 resize-none"
+                    className="mt-1 bg-gray-50 border-gray-200 focus:border-blue-500 focus:ring-blue-500 resize-none w-full px-3 py-2 rounded-md text-lg"
                     placeholder="Your message"
                   />
                 </div>
 
-                <Button
-                  type="submit"
-                  className="w-50 !bg-blue-600 !hover:bg-blue-700 !text-white !font-bold !text-lg !py-6 1px-6 !rounded-md transition-colors"
-                >
-                  Submit Now
-                </Button>
+                <div className="text-center">
+                  <Button
+                    type="submit"
+                    className="w-auto px-8 !bg-blue-600 !hover:bg-blue-700 !text-white !font-bold !text-xl !py-6 !rounded-md transition-colors animate-popup-pulse-blue hover:animate-bounce"
+                  >
+                    Submit Now
+                  </Button>
+                </div>
               </form>
             </div>
           </div>
@@ -691,27 +666,26 @@ export default function Page() {
             <div className="lg:col-span-1">
               <div className="mb-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-3">
-                    <div className="w-6 h-6 bg-[#1e3a8a] rounded-full relative">
-                      <div className="absolute inset-1 bg-white rounded-full"></div>
-                    </div>
-                  </div>
+                  <Image
+                    src="/IMG-20250710-WA0015-removebg-preview.png"
+                    alt="360 Australia Logo"
+                    width={80}
+                    height={60}
+                    className="mr-3 filter brightness-0 invert"
+                  />
                   <div>
-                    <h3 className="text-xl font-semibold">Cloud</h3>
-                    <h3 className="text-xl font-semibold">Converge</h3>
+                    <h3 className="text-xl font-semibold">360</h3>
+                    <h3 className="text-xl font-semibold">AUSTRALIA</h3>
                   </div>
                 </div>
                 <p className="text-lg text-white leading-relaxed mb-6">
-                  Helping Businesses to attract, differentiate, optimize and
-                  grown in their crowded niche through scalable, innovative and
-                  stable digital solutions for web & mobile, cloud migration,
-                  application modernization.
+                  Helping Businesses attract, differentiate, optimize, and grow in their crowded niche through scalable, innovative, and stable digital solutions for web and mobile migration, and application modernization.
                 </p>
               </div>
               <hr></hr>
               <div className="mb-6">
                 <h4 className="text-xl font-bold mb-4 mt-[20px]">
-                  ISO Certificate & Our Partners
+                  ISO Certificates and Our Partners
                 </h4>
                 <div className="grid grid-cols-3 gap-4 mb-4">
                   <div className=" p-4 py-8 rounded flex items-center justify-center">
@@ -755,7 +729,7 @@ export default function Page() {
 
               <div className="mb-6">
                 <h5 className="text-lg font-medium mb-2 ">
-                  Product Engineering & Solution Development
+                  Product and Solution Development
                 </h5>
                 <hr></hr>
                 <ul className="space-y-2 text-sm text-gray-300 mt-[10px]">
@@ -779,7 +753,7 @@ export default function Page() {
 
               <div className="mb-6">
                 <h5 className="text-lg font-medium mb-2 ">
-                  Ecommerce Solutions
+                  E-Commerce Solutions
                 </h5>
                 <hr></hr>
                 <ul className="space-y-2 text-sm text-gray-300 mt-[10px]">
@@ -787,25 +761,25 @@ export default function Page() {
                     ▷ Ecommerce Web & App Development
                   </li>
                   <li className="hover:text-white transition-colors text-lg">
-                    ▷ Shopify Development Services
+                    ▷ Website Development Service
                   </li>
                   <li className="hover:text-white transition-colors text-lg">
-                    ▷ Shopify Integration Services
+                    ▷ Website Integration Service
                   </li>
                   <li className="hover:text-white transition-colors text-lg">
-                    ▷ Shopify Support & Maintenance Services
+                    ▷ Website Support and Maintenance Service
                   </li>
                 </ul>
               </div>
 
               <div>
                 <h5 className="text-lg font-medium mb-2 ">
-                  Cloud Engineering Services
+                  360 Engineering Services
                 </h5>
                 <hr></hr>
                 <ul className="space-y-2 text-sm text-gray-300 mt-[10px]">
                   <li className="hover:text-white transition-colors text-lg">
-                    ▷ Cloud Engineering Services
+                    ▷ 360 Engineering Services
                   </li>
                   <li className="hover:text-white transition-colors text-lg">
                     ▷ Infrastructure Management & Monitoring
@@ -894,58 +868,46 @@ export default function Page() {
               <h4 className="text-xl font-semibold mb-6">Get In Touch</h4>
 
               <div className="mb-6">
-                <h5 className="text-lg font-medium mb-3">USA Address</h5>
+                <h5 className="text-lg font-medium mb-3">Address</h5>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  565, Plandome RD, Unit 107, Manhasset New York – 11030
+                  Sydney, NSW, Australia
                 </p>
               </div>
 
               <div className="mb-6">
-                <h5 className="text-lg font-medium mb-3">INDIA Address</h5>
-                <p className="text-sm text-gray-300 leading-relaxed">
-                  E 44/2, Pocket B, Okhla Phase II, Okhla Industrial Estate, New
-                  Delhi – 110020
-                </p>
-              </div>
-
-              <div className="mb-6">
-                <div className="flex items-center mb-2">
-                  <Phone className="w-4 h-4 mr-2" />
-                  <span className="text-sm">Phone : +91 7827902509</span>
-                </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  <span className="text-sm">Email : info@cloudconverge.io</span>
+                  <span className="text-sm">Email : hello@360australia.com.au</span>
                 </div>
               </div>
 
               <div>
                 <h5 className="text-lg font-medium mb-4">Follow Us</h5>
                 <div className="flex space-x-3">
-                  <Link
+                  <div
                     href="#"
                     className="w-10 h-10 border border-gray-400 rounded-full flex items-center justify-center hover:bg-white hover:text-[#1e3a8a] transition-colors"
                   >
-                    <Twitter className="w-5 h-5" />
-                  </Link>
-                  <Link
-                    href="#"
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  </div>
+                  <div
+                    href=""
                     className="w-10 h-10 border border-gray-400 rounded-full flex items-center justify-center hover:bg-white hover:text-[#1e3a8a] transition-colors"
                   >
                     <Twitter className="w-5 h-5" />
-                  </Link>
-                  <Link
-                    href="#"
+                  </div>
+                  <div
+                    href=""
                     className="w-10 h-10 border border-gray-400 rounded-full flex items-center justify-center hover:bg-white hover:text-[#1e3a8a] transition-colors"
                   >
                     <Linkedin className="w-5 h-5" />
-                  </Link>
-                  <Link
+                  </div>
+                  <div
                     href="#"
                     className="w-10 h-10 border border-gray-400 rounded-full flex items-center justify-center hover:bg-white hover:text-[#1e3a8a] transition-colors"
                   >
                     <Instagram className="w-5 h-5" />
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>

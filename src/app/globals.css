@@ -152,3 +152,42 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 .ant-carousel .slick-list{
  padding-bottom: 25px !important;
 }
+
+/* Popup Animation for Submit Buttons */
+@keyframes popupPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(20, 184, 166, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(20, 184, 166, 0);
+  }
+}
+
+@keyframes popupPulseBlue {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+.animate-popup-pulse {
+  animation: popupPulse 2s infinite ease-in-out;
+}
+
+.animate-popup-pulse-blue {
+  animation: popupPulseBlue 2s infinite ease-in-out;
+}
