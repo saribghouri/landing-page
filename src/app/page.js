@@ -22,6 +22,7 @@ import {
   Facebook,
 } from "lucide-react";
 import { Button, Card, Input, Carousel } from "antd";
+import { RightOutlined } from "@ant-design/icons";
 
 export default function Page() {
   const carouselRef = useRef(null);
@@ -178,16 +179,13 @@ export default function Page() {
         <div className="bg-[#000000] h-screen text-white py-16 md:py-24  relative z-0">
           <div className="container mx-auto px-4 text-center">
             <div className="flex items-center justify-center mb-[30px] mt-[0px]">
-              <Image
-                src="/IMG-20250710-WA0015-removebg-preview.png"
-                alt="360 Australia Ventures Logo"
-                width={154} // Added width for Next.js Image component
-                height={110} // Added height for Next.js Image component
-                className="h-30 w-34 lg:h-[110px] lg:w-[154px]"
-              />
-              <h1 className="text-white text-2xl font-bold !mt-[28px] !mb-[-4px]">
-                AUSTRALIA
-              </h1>
+             <div className="flex items-center">
+            <img
+              src="gif/dWQGyW.gif"
+              alt="360 Australia Ventures Logo"
+              className="h-20 w-54 lg:h-[100px] lg:w-[274px]"
+            />
+        </div>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8 max-w-7xl mx-auto">
               SHOPIFY STORE DESIGN & DEVELOPMENT AND DIGITAL MARKETING AGENCY IN
@@ -214,8 +212,8 @@ export default function Page() {
                           mt-[-140px] sm:mt-[-100px] md:mt-[-120px]  
                           gap-4 sm:gap-6 md:gap-8"
           >
-            <div className="  text-center lg:text-left mb-16 lg:mb-0 !mt-[-25px]">
-              <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold !text-[#ffffff] leading-tight sm:leading-snug mb-5">
+            <div className="  text-center lg:text-left mb-16 lg:mb-0 !ml-[40px] !mt-[-25px]">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold !text-[#ffffff] leading-tight sm:leading-snug mb-5">
                 EMPOWERING BRANDS WITH
               </h2>
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold !mt-[-10px] text-teal-400 leading-tight sm:leading-snug">
@@ -394,6 +392,11 @@ export default function Page() {
                   placeholder="Phone*"
                   className="w-full px-4 py-3 text-[20px] h-[50px] rounded-md bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary"
                 />
+                <Input
+                  type="url"
+                  placeholder="Website URL"
+                  className="w-full px-4 py-3 h-[50px] rounded-md bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary"
+                />
                 <textarea
                   placeholder="Message"
                   rows={5}
@@ -462,9 +465,9 @@ export default function Page() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 bg-white carousel-card-shadow   rounded-lg overflow-hidden items-center">
             {/* Left side - Video */}
-            <div className="relative order-2 w-[90%] lg:order-1 py-[6px]  carousel-card-shadow">
+            <div className="relative order-2 w-[90%] lg:order-1">
               <video
-                className="w-full h-[250px] md:h-[350px] lg:h-full object-cover"
+                className="w-full h-[250px] md:h-[350px] demo-card-border lg:h-full object-cover shadow-[8px_0_15px_-3px_rgba(0,0,0,0.3)]"
                 autoPlay
                 loop
                 muted
@@ -666,16 +669,14 @@ export default function Page() {
             <div className="lg:col-span-1">
               <div className="mb-6">
                 <div className="flex items-center mb-4">
-                  <Image
-                    src="/IMG-20250710-WA0015-removebg-preview.png"
-                    alt="360 Australia Logo"
-                    width={80}
-                    height={60}
-                    className="mr-3 filter brightness-0 invert"
-                  />
+                 <img
+              src="gif/dWQGyW.gif"
+              alt="360 Australia Ventures Logo"
+              className="h-20 w-54 lg:h-[90px] lg:w-[204px] filter brightness-0 invert"
+            />
                   <div>
-                    <h3 className="text-xl font-semibold">360</h3>
-                    <h3 className="text-xl font-semibold">AUSTRALIA</h3>
+                    <h3 className="text-xl font-semibold"></h3>
+                    <h3 className="text-xl font-semibold"></h3>
                   </div>
                 </div>
                 <p className="text-lg text-white leading-relaxed mb-6">
@@ -733,20 +734,20 @@ export default function Page() {
                 </h5>
                 <hr></hr>
                 <ul className="space-y-2 text-sm text-gray-300 mt-[10px]">
-                  <li className="hover:text-white transition-colors">
-                    ▷ Web Application Development
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Web Application Development
                   </li>
-                  <li className="hover:text-white transition-colors">
-                    ▷ Custom Web Development
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Custom Web Development
                   </li>
-                  <li className="hover:text-white transition-colors">
-                    ▷ Mobile App Development
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Mobile App Development
                   </li>
-                  <li className="hover:text-white transition-colors">
-                    ▷ iPhone / iOS App Development
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> iPhone / iOS App Development
                   </li>
-                  <li className="hover:text-white transition-colors">
-                    ▷ Umbraco Implementation Services
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Umbraco Implementation Services
                   </li>
                 </ul>
               </div>
@@ -757,17 +758,17 @@ export default function Page() {
                 </h5>
                 <hr></hr>
                 <ul className="space-y-2 text-sm text-gray-300 mt-[10px]">
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Ecommerce Web & App Development
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Ecommerce Web & App Development
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Website Development Service
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Website Development Service
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Website Integration Service
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Website Integration Service
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Website Support and Maintenance Service
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Website Support and Maintenance Service
                   </li>
                 </ul>
               </div>
@@ -778,26 +779,26 @@ export default function Page() {
                 </h5>
                 <hr></hr>
                 <ul className="space-y-2 text-sm text-gray-300 mt-[10px]">
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ 360 Engineering Services
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> 360 Engineering Services
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Infrastructure Management & Monitoring
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Infrastructure Management & Monitoring
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ DevOps Consulting & Implementation
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> DevOps Consulting & Implementation
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ AWS Consulting Services
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> AWS Consulting Services
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Google Cloud Consulting Services
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Google Cloud Consulting Services
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ M365 Consulting & Implementation Services
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> M365 Consulting & Implementation Services
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Microsoft Azure Consulting
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Microsoft Azure Consulting
                   </li>
                 </ul>
               </div>
@@ -806,58 +807,58 @@ export default function Page() {
             {/* Products & Company */}
             <div className="lg:col-span-1 mt-[52px]">
               <div className="mb-8">
-                <h4 className="text-xl font-semibold mb-2">
+                <h4 className="text-lg font-medium mb-2 ">
                   Business Intelligence & AI / ML
                 </h4>
                 <hr></hr>
                 <ul className="space-y-2 text-sm text-gray-300 mt-[10px]">
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Business Intelligence Implementation
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Business Intelligence Implementation
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ AI / ML Product Development
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> AI / ML Product Development
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ ChatGPT Integration
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> ChatGPT Integration
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8">
-                <h4 className="text-xl font-semibold mb-4">Products</h4>
+                <h4 className="text-xl font-medium mb-4">Products</h4>
                 <ul className="space-y-2 text-sm text-gray-300">
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ MarketPlace App
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> MarketPlace App
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ CRM & Project Management Software
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> CRM & Project Management Software
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold mb-4">Company</h4>
+                <h4 className="text-xl font-medium mb-4">Company</h4>
                 <ul className="space-y-2 text-sm text-gray-300">
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Home
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Home
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Portfolio
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Portfolio
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ About Us
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> About Us
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Work Culture
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Work Culture
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Careers
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Careers
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Blog
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Blog
                   </li>
-                  <li className="hover:text-white transition-colors text-lg">
-                    ▷ Contact
+                  <li className="hover:text-white transition-colors flex items-center">
+                    <RightOutlined className="mr-2" /> Contact
                   </li>
                 </ul>
               </div>

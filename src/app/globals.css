@@ -191,3 +191,6 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 .animate-popup-pulse-blue {
   animation: popupPulseBlue 2s infinite ease-in-out;
 }
+.demo-card-border{
+  border-left: 2px solid white;
+}
