@@ -349,7 +349,7 @@ export default function Page() {
           <div className="flex flex-col items-start space-y-6">
             <div className="w-full max-w-[600px] mx-auto md:mx-0">
               <Image
-                src="/shopify-theme-work.webp"
+                src="/jkwkZK (1).png"
                 width={350}
                 height={350}
                 alt="Ecommerce Solution Screenshot"
