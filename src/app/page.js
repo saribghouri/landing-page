@@ -187,9 +187,15 @@ export default function Page() {
             />
         </div>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8 max-w-7xl mx-auto">
-              SHOPIFY STORE DESIGN & DEVELOPMENT AND DIGITAL MARKETING AGENCY IN
-              INDIA
+            <h1 className="text-3xl md:text-4xl  lg:text-5xl font-bold leading-tight mb-8 max-w-[90%] mx-auto">
+              <span className="text-teal-400 mr-[7px]">
+
+              DESIGN & DEVELOPMENT AND DIGITAL MARKETING AGENCY           
+              </span> 
+                 <span className=" mt-4 uppercase text-white relative font-extrabold">
+                  Starting @ $25 Per Hour 
+                
+               </span>
             </h1>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-[40px]">
               <Button
@@ -212,7 +218,7 @@ export default function Page() {
                           mt-[-140px] sm:mt-[-100px] md:mt-[-120px]  
                           gap-4 sm:gap-6 md:gap-8"
           >
-            <div className="  text-center lg:text-left mb-16 lg:mb-0 !ml-[40px] !mt-[-25px]">
+            <div className="  text-center lg:text-left mb-16 lg:mb-0 !ml-[0px] lg:ml-[40px] !lg:mt-[-25px] !md:mt-[-25px] mt-[-70px]">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold !text-[#ffffff] leading-tight sm:leading-snug mb-5">
                 EMPOWERING BRANDS WITH
               </h2>
@@ -220,7 +226,7 @@ export default function Page() {
                 TRANSFORMATIONAL ECOMMERCE STRATEGIES
               </h2>
             </div>
-            <div className="lg:w-[70%] relative mt-[-110px]  w-full">
+            <div className="lg:w-[70%] relative gap-[50px] mt-[-110px]  w-full">
               <Carousel
                 ref={carouselRef}
                 autoplay={true}
@@ -262,14 +268,14 @@ export default function Page() {
                 className="portfolio-carousel"
               >
                 {sliderItems.map((item, index) => (
-                  <div key={item.id}>
-                    <div className="mx-2 shadow-lg rounded-lg overflow-hidden bg-white carousel-card-shadow transition-transform duration-300 hover:scale-105">
+                  <div key={item.id} className="gap-[50px] flex">
+                    <div className="mx-6 gap-[50px]  shadow-lg rounded-lg flex overflow-hidden bg-white carousel-card-shadow transition-transform duration-300 hover:scale-105">
                       <Image
                         src={item.image || "/placeholder.svg"}
                         alt={item.alt}
                         width={500}
                         height={400}
-                        className="object-cover w-full h-[400px] sm:h-[450px] md:h-[280px] lg:h-[320px]"
+                        className="object-contain flex items-center w-full h-[300px] sm:h-[450px] md:h-[280px] lg:h-[320px]"
                         priority={index < 3}
                       />
                     </div>
@@ -282,10 +288,10 @@ export default function Page() {
                 variant="ghost"
                 size="icon"
                 className="carousel-nav-btn !absolute !left-2 !top-1/2 -translate-y-1/2 
-                          bg-white/90 hover:bg-white rounded-full 
-                          p-2 shadow-lg z-20 
+                          !bg-teal-500 hover:bg-white !rounded-full !border-none  !text-white
+                          !p-2 !shadow-lg z-20 
                           transition-all duration-200 hover:scale-110
-                          w-10 h-10 md:w-12 md:h-12"
+                          !w-10 !h-10 !md:w-12 !md:h-12"
                 aria-label="Previous slide"
                 onClick={goToPrev}
               >
@@ -415,7 +421,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <div className="relative w-full min-h-[400px] md:h-[500px] bg-[#f0efea] flex items-center justify-start overflow-hidden">
+      <div className="relative w-full min-h-[400px] md:h-[500px] bg-[#f0efea] flex flex-col md:flex-row items-center justify-start overflow-hidden">
         <div className="z-10 bg-[#f5fcff] min-h-[400px] md:h-[500px] w-full md:w-[50%] flex justify-center items-center flex-col md:rounded-tr-full px-4 md:px-8 py-8 md:py-0">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold max-w-xl text-gray-800 text-center md:text-left">
             We Are One Of The Development Services
@@ -424,12 +430,13 @@ export default function Page() {
             From creating a new store to building a feature-rich website, 360 Australia provides end-to-end development services. Our services provide a recognized e-commerce presence that aligns with your brand identity.
           </p>
         </div>
-        <div className="hidden md:flex absolute right-0 top-0 h-full w-[50%] items-center justify-end space-x-4 z-0">
+        <div className="flex md:absolute md:right-0 md:top-0 h-[300px] md:h-full w-full md:w-[50%] items-center justify-center md:justify-end z-20 md:z-0">
           <video
-            className="w-full max-w-[800px] lg:w-[1000px] h-full object-cover"
+            className="w-full h-full object-cover"
             autoPlay
             loop
             muted
+            playsInline
             src="/shopify-video.mp4"
           />
         </div>
@@ -559,10 +566,10 @@ export default function Page() {
               <h2 className="text-5xl font-bold mb-12">Contact Us</h2>
 
               {/* Australia Address */}
-              <div className="flex items-start gap-4 justify-center lg:justify-start">
+              <div className="flex items-start gap-4 justify-center lg:justify-start ml-[-40px] lg:ml-0 md:ml-0 ">
                 <MapPin className="w-8 h-8 mt-1 text-white flex-shrink-0" />
                 <div>
-                  <h3 className="text-2xl font-semibold mb-2">Address</h3>
+                  <h3 className="text-2xl font-semibold mb-2 text-start">Address</h3>
                   <p className="text-gray-300 leading-relaxed text-lg">
                     Sydney, NSW, Australia
                   </p>
@@ -573,7 +580,7 @@ export default function Page() {
               <div className="flex items-start gap-4 justify-center lg:justify-start">
                 <Mail className="w-8 h-8 mt-1 text-white flex-shrink-0" />
                 <div>
-                  <h3 className="text-2xl font-semibold mb-2">Email</h3>
+                  <h3 className="text-2xl font-semibold mb-2 text-start">Email</h3>
                   <a
                     href="mailto:hello@360australia.com.au"
                     className="text-gray-300 hover:text-white transition-colors underline text-lg"
