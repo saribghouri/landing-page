@@ -430,7 +430,7 @@ export default function Page() {
             From creating a new store to building a feature-rich website, 360 Australia provides end-to-end development services. Our services provide a recognized e-commerce presence that aligns with your brand identity.
           </p>
         </div>
-        <div className="flex md:absolute md:right-0 md:top-0 h-[300px] md:h-full w-full md:w-[50%] items-center justify-center md:justify-end z-20 md:z-0">
+        {/* <div className="flex md:absolute md:right-0 md:top-0 h-[300px] md:h-full w-full md:w-[50%] items-center justify-center md:justify-end z-20 md:z-0">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -439,7 +439,7 @@ export default function Page() {
             playsInline
             src="/shopify-video.mp4"
           />
-        </div>
+        </div> */}
       </div>
       <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center bg-white">
         <div className="container px-4 md:px-6">
